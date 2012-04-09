@@ -1,0 +1,4 @@
+./makeswflib imgs library.swf
+
+#less LibraryClasses.hx
+#less library.swf.xml
