@@ -63,7 +63,8 @@ class Data {
 	public static function reset(){
 		Data.achievements = new Hash<String>();
 		Data.achievements.set("started_game","got");
-		Data.keys = [[49,50,51,52],[38,39],[57,48],[97,98]];
+		Data.keys = [[49,50],[38,39],[57,48],[97,98]];
+		if (Const.debugextrakeys) Data.keys = [[49,50,51,52],[38,39],[57,48],[97,98]];
 		Data.ponies = ["fs","pp","ts"];
 		//Data.ponies = ["fs","pp","ts","ra"];
 		Data.maxbg = 2;
@@ -315,6 +316,7 @@ class Const {
 
 	/*public static var debug=true;
 	public static var debugchickenbg=false;
+	public static var debugextrakeys=true;
 	public static var debugkeys=false;
 	public static var debugponies=true;
 	//public static var debugponies=false;
@@ -331,6 +333,7 @@ class Const {
 	public static var debug=false;
 	public static var debugchickenbg=false;
 	public static var debugkeys=false;
+	public static var debugextrakeys=false;
 	public static var debugponies=false;
 	public static var debugpony="";
 	public static var debugfaststart=false;
